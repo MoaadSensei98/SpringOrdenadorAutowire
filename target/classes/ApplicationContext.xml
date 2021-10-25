@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd"> 
+	<!-- RAMS -->
+	<bean id="ram1" class="main.Ram">
+		<property name="precio" value="#{ram1.precio}"></property>
+		<property name="hz" value="3500.0"></property>
+		<property name="generacion" value="DDR4"></property>
+	</bean>
+	<bean id="ram2" class="main.Ram">
+		<property name="precio" value="#{ram2.precio}"></property>
+		<property name="hz" value="3300.0"></property>
+		<property name="generacion" value="DDR4"></property>
+	</bean>
+	
+	<!-- GRAFICAS -->
+	<bean id="grafica1" class="main.TarjetaGrafica" autowire="byName">
+		<property name="precio" value="#{grafica1.precio}"></property>
+		<property name="marca" value="#{marcas.marcasAleatorias()}"></property>
+		<property name="modelo" value="GTX 2080"></property>
+	</bean>
+	<bean id="grafica2" class="main.TarjetaGrafica" autowire="byName">
+	    <property name="precio" value="#{grafica2.precio}"></property>
+		<property name="marca" value="#{marcas.marcasAleatorias()}"></property>
+		<property name="modelo" value="GTX 2070"></property>
+	</bean>
+	
+	<!-- TARJETA INTEGRADA -->
+	<bean id="tarjetaIntegrada" class="main.TarjetaGrafica"
+		autowire="byName">
+		<property name="precio" value="#{tarjetaIntegrada.precio}"></property>
+		<property name="marca" value="#{marcas.marcasAleatorias()}"></property>
+		<property name="modelo" value="GTX 2080"></property>
+	</bean>
+	
+	<!-- RAM INTEGRADA -->
+	<bean id="ramIntegrada" class="main.Ram">
+		<property name="precio" value="#{ramIntegrada.precio}"></property>
+		<property name="hz" value="2500.0"></property>
+		<property name="generacion" value="DDR4"></property>
+	</bean>
+	
+	<!-- PROCESADOR -->
+	<bean id="procesador" class="main.Procesador" autowire="byName">
+		<property name="precio" value="#{procesador.precio}"></property> 
+		<property name="Ghz" value="3.0"></property>
+		<property name="marca" value="#{marcas.marcasAleatorias()}"></property>
+	</bean>
+	
+	<!-- PLACA BASE -->
+	<bean id="placaBase" class="main.PlacaBase">
+		<property name="precio" value="#{placaBase.precio}"></property>
+		<property name="marca" value="#{marcas.marcasAleatorias()}"></property>
+		<property name="modelo" value="Ryzen 5"></property>
+	</bean>
+	
+	<!-- PERIFERICOS -->
+	<bean id="periferico1" class="main.Perifericos">
+		<property name="precio" value="#{periferico1.precio}"></property>  
+		<property name="nombre" value="Raton"></property>
+		<property name="marca" value="#{marcas.marcasAleatorias()}"></property>
+	</bean>
+	<bean id="periferico2" class="main.Perifericos">
+	    <property name="precio" value="#{periferico2.precio}"></property> 
+		<property name="nombre" value="Teclado"></property>
+		<property name="marca" value="#{marcas.marcasAleatorias()}"></property>
+	</bean>
+	<bean id="periferico3" class="main.Perifericos">
+	    <property name="precio" value="#{periferico3.precio}"></property> 
+		<property name="nombre" value="Cascos"></property>
+		<property name="marca" value="#{marcas.marcasAleatorias()}"></property>
+	</bean>
+ 	<bean id="marcas" class="main.Marcas">
+ 	 
+ 	</bean>
+	<!-- ...................................................................................................................................... -->
+	<!-- ORDENADOR -->
+ 
+	<bean id="ordenador" class="main.Ordenador" autowire="byType">
+     	<property name="marca" value="#{marcas.marcasAleatorias()}"></property>
+	</bean>
+
+</beans>

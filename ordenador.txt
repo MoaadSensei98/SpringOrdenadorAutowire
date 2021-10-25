@@ -1,0 +1,8 @@
+Ordenador 
+precio=3399.1749682392056€,
+marca=AMD,
+procesador=Procesador precio=167.0200586928172, Ghz=3.0, marca=GIGABYTE, Tarjeta Integrada= TarjetaGrafica precio=41.71040707575056, marca=GIGABYTE, modelo=GTX 2080, ram Integrada=Ram precio=300.7157958870479, hz=2500.0, generacion=DDR4,
+listaRam=[Ram precio=137.08209773054074, hz=3500.0, generacion=DDR4, Ram precio=447.6782382532137, hz=3300.0, generacion=DDR4, Ram precio=300.7157958870479, hz=2500.0, generacion=DDR4],
+listaTarjetaGrafica=[TarjetaGrafica precio=449.2968359982094, marca=ASUS, modelo=GTX 2080, ram Integrada=Ram precio=300.7157958870479, hz=2500.0, generacion=DDR4, TarjetaGrafica precio=218.1196806036091, marca=ACER, modelo=GTX 2070, ram Integrada=Ram precio=300.7157958870479, hz=2500.0, generacion=DDR4, TarjetaGrafica precio=41.71040707575056, marca=GIGABYTE, modelo=GTX 2080, ram Integrada=Ram precio=300.7157958870479, hz=2500.0, generacion=DDR4],
+listaPerifericos=[Perifericos nombre=Raton, precio=322.54406361298805, marca=GIGABYTE, Perifericos nombre=Teclado, precio=465.0801928936017, marca=ACER, Perifericos nombre=Cascos, precio=440.6510351119798, marca=ASUS],
+placaBase=PlacaBase precio=409.276562379447, marca=HP, modelo=Ryzen 5
